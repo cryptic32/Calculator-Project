@@ -21,10 +21,10 @@ using namespace std;
 	void SummaMatrices()
 	{
 		int m, n;
-		printf("\nвведите размер матриц\n");
-		printf("кол-во строк(m): ");
+		printf("\nРІРІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РјР°С‚СЂРёС†\n");
+		printf("РєРѕР»-РІРѕ СЃС‚СЂРѕРє(m): ");
 		scanf_s("%d", &m);
-		printf("кол-во столбцов(n): ");
+		printf("РєРѕР»-РІРѕ СЃС‚РѕР»Р±С†РѕРІ(n): ");
 		scanf_s("%d", &n);
 		float** matrix1 = (float**)malloc(sizeof(*matrix1) * m);
 		float** matrix2 = (float**)malloc(sizeof(*matrix2) * m);
@@ -34,7 +34,7 @@ using namespace std;
 			matrix2[i] = (float*)malloc(sizeof(**matrix2) * n);
 			result[i] = (float*)malloc(sizeof(**result) * n);
 		}
-		printf("Введите элементы матрицы1:\n");
+		printf("Р’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚С‹ РјР°С‚СЂРёС†С‹1:\n");
 		for (int i = 0; i < m; i++)
 		{
 			for (int j = 0; j < n; j++)
@@ -44,7 +44,7 @@ using namespace std;
 			}
 		}
 		PrintMatrix(matrix1, n, m);
-		printf("Введите элементы матрицы2:\n");
+		printf("Р’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚С‹ РјР°С‚СЂРёС†С‹2:\n");
 		for (int i = 0; i < m; i++)
 		{
 			for (int j = 0; j < n; j++)
@@ -62,7 +62,7 @@ using namespace std;
 				result[i][j] = matrix1[i][j] + matrix2[i][j];
 			}
 		}
-		printf("результат:\n");
+		printf("СЂРµР·СѓР»СЊС‚Р°С‚:\n");
 		PrintMatrix(result, n, m);
 		for (int i = 0; i < m; i++) {
 			free(matrix1[i]);
@@ -77,10 +77,10 @@ using namespace std;
 	void DeductMatrice()
 	{
 		int m, n;
-		printf("\nвведите размер матриц\n");
-		printf("кол-во строк(m): ");
+		printf("\nРІРІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РјР°С‚СЂРёС†\n");
+		printf("РєРѕР»-РІРѕ СЃС‚СЂРѕРє(m): ");
 		scanf_s("%d", &m);
-		printf("кол-во столбцов(n): ");
+		printf("РєРѕР»-РІРѕ СЃС‚РѕР»Р±С†РѕРІ(n): ");
 		scanf_s("%d", &n);
 		float** matrix1 = (float**)malloc(sizeof(*matrix1) * m);
 		float** matrix2 = (float**)malloc(sizeof(*matrix2) * m);
@@ -90,7 +90,7 @@ using namespace std;
 			matrix2[i] = (float*)malloc(sizeof(**matrix2) * n);
 			result[i] = (float*)malloc(sizeof(**result) * n);
 		}
-		printf("Введите элементы матрицы1:\n");
+		printf("Р’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚С‹ РјР°С‚СЂРёС†С‹1:\n");
 		for (int i = 0; i < m; i++)
 		{
 			for (int j = 0; j < n; j++)
@@ -100,7 +100,7 @@ using namespace std;
 			}
 		}
 		PrintMatrix(matrix1, n, m);
-		printf("Введите элементы матрицы2:\n");
+		printf("Р’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚С‹ РјР°С‚СЂРёС†С‹2:\n");
 		for (int i = 0; i < m; i++)
 		{
 			for (int j = 0; j < n; j++)
@@ -118,7 +118,7 @@ using namespace std;
 				result[i][j] = matrix1[i][j] - matrix2[i][j];
 			}
 		}
-		printf("результат:\n");
+		printf("СЂРµР·СѓР»СЊС‚Р°С‚:\n");
 		PrintMatrix(result, n, m);
 		for (int i = 0; i < m; i++) {
 			free(matrix1[i]);
@@ -134,19 +134,19 @@ using namespace std;
 		while (1) {
 			int m, n, choice1 = 1, m1, n1;
 			do {
-				printf("\nВведите размер матриц:\n");
-				printf("Количество строк матрицы 1 (m): ");
+				printf("\nР’РІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РјР°С‚СЂРёС†:\n");
+				printf("РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹ 1 (m): ");
 				scanf_s("%d", &m);
-				printf("Количество столбцов матрицы 1 (n): ");
+				printf("РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚РѕР»Р±С†РѕРІ РјР°С‚СЂРёС†С‹ 1 (n): ");
 				scanf_s("%d", &n);
 				printf("\n");
-				printf("Количество строк матрицы 2 (m1): ");
+				printf("РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹ 2 (m1): ");
 				scanf_s("%d", &m1);
-				printf("Количество столбцов матрицы 2 (n1): ");
+				printf("РљРѕР»РёС‡РµСЃС‚РІРѕ СЃС‚РѕР»Р±С†РѕРІ РјР°С‚СЂРёС†С‹ 2 (n1): ");
 				scanf_s("%d", &n1);
 				if (n != m1) {
-					printf("\nОперация умножения двух матриц выполнима только в том случае, если число столбцов в первом сомножителе равно числу строк во втором!\n");
-					printf("1 - Ввести размеры заново\n2 - Выйти в меню\n");
+					printf("\nРћРїРµСЂР°С†РёСЏ СѓРјРЅРѕР¶РµРЅРёСЏ РґРІСѓС… РјР°С‚СЂРёС† РІС‹РїРѕР»РЅРёРјР° С‚РѕР»СЊРєРѕ РІ С‚РѕРј СЃР»СѓС‡Р°Рµ, РµСЃР»Рё С‡РёСЃР»Рѕ СЃС‚РѕР»Р±С†РѕРІ РІ РїРµСЂРІРѕРј СЃРѕРјРЅРѕР¶РёС‚РµР»Рµ СЂР°РІРЅРѕ С‡РёСЃР»Сѓ СЃС‚СЂРѕРє РІРѕ РІС‚РѕСЂРѕРј!\n");
+					printf("1 - Р’РІРµСЃС‚Рё СЂР°Р·РјРµСЂС‹ Р·Р°РЅРѕРІРѕ\n2 - Р’С‹Р№С‚Рё РІ РјРµРЅСЋ\n");
 					scanf_s("%d", &choice1);
 					if (choice1 == 2) {
 						break;
@@ -169,23 +169,23 @@ using namespace std;
 			for (int i = 0; i < m; i++) {
 				result[i] = (float*)malloc(sizeof(**result) * n1);
 			}
-			printf("Введите элементы матрицы 1:\n");
+			printf("Р’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚С‹ РјР°С‚СЂРёС†С‹ 1:\n");
 			for (int i = 0; i < m; i++) {
 				for (int j = 0; j < n; j++) {
 					printf("matrix1[%d][%d] = ", i, j);
 					scanf_s("%f", &matrix1[i][j]);
 				}
 			}
-			printf("Матрица 1:\n");
+			printf("РњР°С‚СЂРёС†Р° 1:\n");
 			PrintMatrix(matrix1, m, n);
-			printf("Введите элементы матрицы 2:\n");
+			printf("Р’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚С‹ РјР°С‚СЂРёС†С‹ 2:\n");
 			for (int i = 0; i < m1; i++) {
 				for (int j = 0; j < n1; j++) {
 					printf("matrix2[%d][%d] = ", i, j);
 					scanf_s("%f", &matrix2[i][j]);
 				}
 			}
-			printf("Матрица 2:\n");
+			printf("РњР°С‚СЂРёС†Р° 2:\n");
 			PrintMatrix(matrix2, m1, n1);
 			for (int i = 0; i < m; i++) {
 				for (int j = 0; j < n1; j++) {
@@ -195,7 +195,7 @@ using namespace std;
 					}
 				}
 			}
-			printf("\nРезультат умножения:\n");
+			printf("\nР РµР·СѓР»СЊС‚Р°С‚ СѓРјРЅРѕР¶РµРЅРёСЏ:\n");
 			PrintMatrix(result, m, n1);
 			for (int i = 0; i < m; i++) {
 				free(matrix1[i]);
@@ -216,16 +216,16 @@ using namespace std;
 	{
 		int m, n;
 		float chislo;
-		printf("\nвведите размер матриц\n");
-		printf("кол-во строк(m): ");
+		printf("\nРІРІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РјР°С‚СЂРёС†\n");
+		printf("РєРѕР»-РІРѕ СЃС‚СЂРѕРє(m): ");
 		scanf_s("%d", &m);
-		printf("кол-во столбцов(n): ");
+		printf("РєРѕР»-РІРѕ СЃС‚РѕР»Р±С†РѕРІ(n): ");
 		scanf_s("%d", &n);
 		float** matrix1 = (float**)malloc(sizeof(*matrix1) * m);
 		for (int i = 0; i < m; i++) {
 			matrix1[i] = (float*)malloc(sizeof(**matrix1) * n);
 		}
-		printf("Введите элементы матрицы1:\n");
+		printf("Р’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚С‹ РјР°С‚СЂРёС†С‹1:\n");
 		for (int i = 0; i < m; i++)
 		{
 			for (int j = 0; j < n; j++)
@@ -235,14 +235,14 @@ using namespace std;
 			}
 		}
 		PrintMatrix(matrix1, m, n);
-		printf("введите число\n");
+		printf("РІРІРµРґРёС‚Рµ С‡РёСЃР»Рѕ\n");
 		scanf_s("%f", &chislo);
 		for (int i = 0; i < m; i++) {
 			for (int j = 0; j < n; j++) {
 				matrix1[i][j] = matrix1[i][j] * chislo;
 			}
 		}
-		printf("результат: \n");
+		printf("СЂРµР·СѓР»СЊС‚Р°С‚: \n");
 		PrintMatrix(matrix1, m, n);
 		for (int i = 0; i < m; i++) {
 			free(matrix1[i]);
@@ -253,16 +253,16 @@ using namespace std;
 	{
 		int m, n;
 		float chislo;
-		printf("\nвведите размер матриц\n");
-		printf("кол-во строк(m): ");
+		printf("\nРІРІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РјР°С‚СЂРёС†\n");
+		printf("РєРѕР»-РІРѕ СЃС‚СЂРѕРє(m): ");
 		scanf_s("%d", &m);
-		printf("кол-во столбцов(n): ");
+		printf("РєРѕР»-РІРѕ СЃС‚РѕР»Р±С†РѕРІ(n): ");
 		scanf_s("%d", &n);
 		float** matrix1 = (float**)malloc(sizeof(*matrix1) * m);
 		for (int i = 0; i < m; i++) {
 			matrix1[i] = (float*)malloc(sizeof(**matrix1) * n);
 		}
-		printf("Введите элементы матрицы1:\n");
+		printf("Р’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚С‹ РјР°С‚СЂРёС†С‹1:\n");
 		for (int i = 0; i < m; i++)
 		{
 			for (int j = 0; j < n; j++)
@@ -272,14 +272,14 @@ using namespace std;
 			}
 		}
 		PrintMatrix(matrix1, m, n);
-		printf("введите число\n");
+		printf("РІРІРµРґРёС‚Рµ С‡РёСЃР»Рѕ\n");
 		scanf_s("%f", &chislo);
 		for (int i = 0; i < m; i++) {
 			for (int j = 0; j < n; j++) {
 				matrix1[i][j] = matrix1[i][j] + chislo;
 			}
 		}
-		printf("результат: \n");
+		printf("СЂРµР·СѓР»СЊС‚Р°С‚: \n");
 		PrintMatrix(matrix1, m, n);
 		for (int i = 0; i < m; i++) {
 			free(matrix1[i]);
@@ -290,16 +290,16 @@ using namespace std;
 	{
 		int m, n;
 		float chislo;
-		printf("\nвведите размер матриц\n");
-		printf("кол-во строк(m): ");
+		printf("\nРІРІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РјР°С‚СЂРёС†\n");
+		printf("РєРѕР»-РІРѕ СЃС‚СЂРѕРє(m): ");
 		scanf_s("%d", &m);
-		printf("кол-во столбцов(n): ");
+		printf("РєРѕР»-РІРѕ СЃС‚РѕР»Р±С†РѕРІ(n): ");
 		scanf_s("%d", &n);
 		float** matrix1 = (float**)malloc(sizeof(*matrix1) * m);
 		for (int i = 0; i < m; i++) {
 			matrix1[i] = (float*)malloc(sizeof(**matrix1) * n);
 		}
-		printf("Введите элементы матрицы1:\n");
+		printf("Р’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚С‹ РјР°С‚СЂРёС†С‹1:\n");
 		for (int i = 0; i < m; i++)
 		{
 			for (int j = 0; j < n; j++)
@@ -309,14 +309,14 @@ using namespace std;
 			}
 		}
 		PrintMatrix(matrix1, m, n);
-		printf("введите число\n");
+		printf("РІРІРµРґРёС‚Рµ С‡РёСЃР»Рѕ\n");
 		scanf_s("%f", &chislo);
 		for (int i = 0; i < m; i++) {
 			for (int j = 0; j < n; j++) {
 				matrix1[i][j] = matrix1[i][j] - chislo;
 			}
 		}
-		printf("результат: \n");
+		printf("СЂРµР·СѓР»СЊС‚Р°С‚: \n");
 		PrintMatrix(matrix1, m, n);
 		for (int i = 0; i < m; i++) {
 			free(matrix1[i]);
@@ -326,10 +326,10 @@ using namespace std;
 	void MatrixTransposition()
 	{
 		int m, n;
-		printf("\nвведите размер матриц\n");
-		printf("кол-во строк(m): ");
+		printf("\nРІРІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РјР°С‚СЂРёС†\n");
+		printf("РєРѕР»-РІРѕ СЃС‚СЂРѕРє(m): ");
 		scanf_s("%d", &m);
-		printf("кол-во столбцов(n): ");
+		printf("РєРѕР»-РІРѕ СЃС‚РѕР»Р±С†РѕРІ(n): ");
 		scanf_s("%d", &n);
 		float** matrix1 = (float**)malloc(sizeof(*matrix1) * m);
 		float** result = (float**)malloc(sizeof(*result) * n);
@@ -339,7 +339,7 @@ using namespace std;
 		for (int i = 0; i < n; i++) {
 			result[i] = (float*)malloc(sizeof(**result) * m);
 		}
-		printf("Введите элементы матрицы1:\n");
+		printf("Р’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚С‹ РјР°С‚СЂРёС†С‹1:\n");
 		for (int i = 0; i < m; i++)
 		{
 			for (int j = 0; j < n; j++)
@@ -355,7 +355,7 @@ using namespace std;
 				result[j][i] = matrix1[i][j];
 			}
 		}
-		printf("результат: \n");
+		printf("СЂРµР·СѓР»СЊС‚Р°С‚: \n");
 		PrintMatrix(result, n, m);
 		for (int i = 0; i < m; i++) {
 			free(matrix1[i]);
@@ -370,17 +370,17 @@ using namespace std;
 	{
 		while (1) {
 			int m, n, chislo = 0;
-			printf("\nвведите размер матриц\n");
+			printf("\nРІРІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РјР°С‚СЂРёС†\n");
 			do {
-				printf("кол-во строк(m): ");
+				printf("РєРѕР»-РІРѕ СЃС‚СЂРѕРє(m): ");
 				scanf_s("%d", &m);
-				printf("кол-во столбцов(n): ");
+				printf("РєРѕР»-РІРѕ СЃС‚РѕР»Р±С†РѕРІ(n): ");
 				scanf_s("%d", &n);
 				if (m != n) {
-					printf("\nопределитель матрицы можно найти только у квадратной матрицы, т.е. m = n\n");
+					printf("\nРѕРїСЂРµРґРµР»РёС‚РµР»СЊ РјР°С‚СЂРёС†С‹ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё С‚РѕР»СЊРєРѕ Сѓ РєРІР°РґСЂР°С‚РЅРѕР№ РјР°С‚СЂРёС†С‹, С‚.Рµ. m = n\n");
 					do {
-						printf("1 - ввести размеры заного\n2 - выйти\n");
-						printf("ваш выбор: ");
+						printf("1 - РІРІРµСЃС‚Рё СЂР°Р·РјРµСЂС‹ Р·Р°РЅРѕРіРѕ\n2 - РІС‹Р№С‚Рё\n");
+						printf("РІР°С€ РІС‹Р±РѕСЂ: ");
 						scanf_s("%d", &chislo);
 						if (chislo == 2) { break; }
 					} while (chislo > 2 || chislo < 1);
@@ -389,7 +389,7 @@ using namespace std;
 					}
 				}
 				if ((m > 3 && n > 3) || (m < 1 && n < 1)) {
-					printf("\nэто калькулятор в котором можно посчитать определитель только матриц 1-го, 2-го или 3 - го порядка.\nвведите размер еще раз!\n");
+					printf("\nСЌС‚Рѕ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂ РІ РєРѕС‚РѕСЂРѕРј РјРѕР¶РЅРѕ РїРѕСЃС‡РёС‚Р°С‚СЊ РѕРїСЂРµРґРµР»РёС‚РµР»СЊ С‚РѕР»СЊРєРѕ РјР°С‚СЂРёС† 1-РіРѕ, 2-РіРѕ РёР»Рё 3 - РіРѕ РїРѕСЂСЏРґРєР°.\nРІРІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РµС‰Рµ СЂР°Р·!\n");
 				}
 			} while (m != n || (m > 3 && n > 3) || (m < 1 && n < 1));
 			if (chislo == 2) { break; }
@@ -397,7 +397,7 @@ using namespace std;
 			for (int i = 0; i < m; i++) {
 				matrix1[i] = (float*)malloc(sizeof(**matrix1) * n);
 			}
-			printf("Введите элементы матрицы1:\n");
+			printf("Р’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚С‹ РјР°С‚СЂРёС†С‹1:\n");
 			for (int i = 0; i < m; i++)
 			{
 				for (int j = 0; j < n; j++)
@@ -410,11 +410,11 @@ using namespace std;
 			if (m == 1 && n == 1)
 			{
 				if (matrix1[0][0] == 0) {
-					printf("\nМатрица не является обратимой!\n");
+					printf("\nРњР°С‚СЂРёС†Р° РЅРµ СЏРІР»СЏРµС‚СЃСЏ РѕР±СЂР°С‚РёРјРѕР№!\n");
 				}
 				else {
 					float inverse = 1 / matrix1[0][0];
-					printf("\nОбратная матрица:\n");
+					printf("\nРћР±СЂР°С‚РЅР°СЏ РјР°С‚СЂРёС†Р°:\n");
 					printf("%5.2f\n", inverse);
 				}
 			}
@@ -422,7 +422,7 @@ using namespace std;
 			{
 				int determinant = matrix1[0][0] * matrix1[1][1] - matrix1[0][1] * matrix1[1][0];
 				if (determinant == 0) {
-					printf("\nМатрица не является обратимой!\n");
+					printf("\nРњР°С‚СЂРёС†Р° РЅРµ СЏРІР»СЏРµС‚СЃСЏ РѕР±СЂР°С‚РёРјРѕР№!\n");
 				}
 				float** inverse = (float**)malloc(sizeof(*inverse) * m);
 				for (int i = 0; i < n; i++) {
@@ -432,14 +432,14 @@ using namespace std;
 				inverse[0][1] = -matrix1[0][1] / determinant;
 				inverse[1][0] = -matrix1[1][0] / determinant;
 				inverse[1][1] = matrix1[0][0] / determinant;
-				printf("\nрезультат: \n");
+				printf("\nСЂРµР·СѓР»СЊС‚Р°С‚: \n");
 				PrintMatrix(inverse, m, n);
 			}
 			if (m == 3 && n == 3)
 			{
 				float determinant = matrix1[0][0] * matrix1[1][1] * matrix1[2][2] + matrix1[0][1] * matrix1[1][2] * matrix1[2][0] + matrix1[0][2] * matrix1[1][0] * matrix1[2][1] - matrix1[0][2] * matrix1[1][1] * matrix1[2][0] - matrix1[0][1] * matrix1[1][0] * matrix1[2][2] - matrix1[0][0] * matrix1[1][2] * matrix1[2][1];
 				if (determinant == 0) {
-					printf("\nМатрица не является обратимой!\n");
+					printf("\nРњР°С‚СЂРёС†Р° РЅРµ СЏРІР»СЏРµС‚СЃСЏ РѕР±СЂР°С‚РёРјРѕР№!\n");
 					return;
 				}
 				float** inverse = (float**)malloc(sizeof(*inverse) * m);
@@ -455,7 +455,7 @@ using namespace std;
 				inverse[2][0] = (matrix1[1][0] * matrix1[2][1] - matrix1[1][1] * matrix1[2][0]) / determinant;
 				inverse[2][1] = (matrix1[0][1] * matrix1[2][0] - matrix1[0][0] * matrix1[2][1]) / determinant;
 				inverse[2][2] = (matrix1[0][0] * matrix1[1][1] - matrix1[0][1] * matrix1[1][0]) / determinant;
-				printf("\nОбратная матрица:\n");
+				printf("\nРћР±СЂР°С‚РЅР°СЏ РјР°С‚СЂРёС†Р°:\n");
 				PrintMatrix(inverse, m, n);
 			}
 			break;
@@ -466,17 +466,17 @@ using namespace std;
 	{
 		while (1) {
 			int m, n, chislo = 0;
-			printf("\nвведите размер матриц\n");
+			printf("\nРІРІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РјР°С‚СЂРёС†\n");
 			do {
-				printf("кол-во строк(m): ");
+				printf("РєРѕР»-РІРѕ СЃС‚СЂРѕРє(m): ");
 				scanf_s("%d", &m);
-				printf("кол-во столбцов(n): ");
+				printf("РєРѕР»-РІРѕ СЃС‚РѕР»Р±С†РѕРІ(n): ");
 				scanf_s("%d", &n);
 				if (m != n) {
-					printf("\nопределитель матрицы можно найти только у квадратной матрицы, т.е. m = n\n");
+					printf("\nРѕРїСЂРµРґРµР»РёС‚РµР»СЊ РјР°С‚СЂРёС†С‹ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё С‚РѕР»СЊРєРѕ Сѓ РєРІР°РґСЂР°С‚РЅРѕР№ РјР°С‚СЂРёС†С‹, С‚.Рµ. m = n\n");
 					do {
-						printf("1 - ввести размеры заного\n2 - выйти\n");
-						printf("ваш выбор: ");
+						printf("1 - РІРІРµСЃС‚Рё СЂР°Р·РјРµСЂС‹ Р·Р°РЅРѕРіРѕ\n2 - РІС‹Р№С‚Рё\n");
+						printf("РІР°С€ РІС‹Р±РѕСЂ: ");
 						scanf_s("%d", &chislo);
 					} while (chislo > 2 || chislo < 1);
 					if (chislo == 2) {
@@ -484,7 +484,7 @@ using namespace std;
 					}
 				}
 				if ((m > 3 && n > 3) || (m < 1 && n < 1)) {
-					printf("\nэто калькулятор в котором можно посчитать определитель только матриц 1-го, 2-го или 3 - го порядка.\nвведите размер еще раз!\n");
+					printf("\nСЌС‚Рѕ РєР°Р»СЊРєСѓР»СЏС‚РѕСЂ РІ РєРѕС‚РѕСЂРѕРј РјРѕР¶РЅРѕ РїРѕСЃС‡РёС‚Р°С‚СЊ РѕРїСЂРµРґРµР»РёС‚РµР»СЊ С‚РѕР»СЊРєРѕ РјР°С‚СЂРёС† 1-РіРѕ, 2-РіРѕ РёР»Рё 3 - РіРѕ РїРѕСЂСЏРґРєР°.\nРІРІРµРґРёС‚Рµ СЂР°Р·РјРµСЂ РµС‰Рµ СЂР°Р·!\n");
 				}
 			} while (m != n || (m > 3 && n > 3) || (m < 1 && n < 1));
 			if (chislo == 2) {
@@ -494,7 +494,7 @@ using namespace std;
 			for (int i = 0; i < m; i++) {
 				matrix1[i] = (float*)malloc(sizeof(**matrix1) * n);
 			}
-			printf("Введите элементы матрицы1:\n");
+			printf("Р’РІРµРґРёС‚Рµ СЌР»РµРјРµРЅС‚С‹ РјР°С‚СЂРёС†С‹1:\n");
 			for (int i = 0; i < m; i++)
 			{
 				for (int j = 0; j < n; j++)
@@ -506,15 +506,15 @@ using namespace std;
 			PrintMatrix(matrix1, m, n);
 			if (n == 1 && m == 1) {
 				float determinant = matrix1[0][0];
-				printf("\nОпределитель матрицы: %f\n", determinant);
+				printf("\nРћРїСЂРµРґРµР»РёС‚РµР»СЊ РјР°С‚СЂРёС†С‹: %f\n", determinant);
 			}
 			if (n == 2 && m == 2) {
 				float determinant = matrix1[0][0] * matrix1[1][1] - matrix1[0][1] * matrix1[1][0];
-				printf("\nОпределитель матрицы: %f\n", determinant);
+				printf("\nРћРїСЂРµРґРµР»РёС‚РµР»СЊ РјР°С‚СЂРёС†С‹: %f\n", determinant);
 			}
 			if (m == 3 && n == 3) {
 				float determinant = matrix1[0][0] * matrix1[1][1] * matrix1[2][2] + matrix1[0][1] * matrix1[1][2] * matrix1[2][0] + matrix1[0][2] * matrix1[1][0] * matrix1[2][1] - matrix1[0][2] * matrix1[1][1] * matrix1[2][0] - matrix1[0][1] * matrix1[1][0] * matrix1[2][2] - matrix1[0][0] * matrix1[1][2] * matrix1[2][1];
-				printf("\nОпределитель матрицы: %f\n", determinant);
+				printf("\nРћРїСЂРµРґРµР»РёС‚РµР»СЊ РјР°С‚СЂРёС†С‹: %f\n", determinant);
 			}
 			break;
 		}
@@ -524,18 +524,18 @@ using namespace std;
 		while (1) {
 			int choice;
 			setlocale(LC_ALL, "");
-			printf("\nКАЛЬКУЛЯТОР МАТРИЦ\n");
-			printf("1 - сложение матриц\n");
-			printf("2 - вычитание матриц\n");
-			printf("3 - умножение матриц\n");
-			printf("4 - умножение матрицы на число\n");
-			printf("5 - сложение матрицы с числом\n");
-			printf("6 - вычитание из матрицы числа\n");
-			printf("7 - транспонирование матрицы\n");
-			printf("8 - обратная матрица(2-го,3-го порядка)\n");
-			printf("9 - определитель(2-го,3-го порядка)\n");
-			printf("0 - выйти\n");
-			printf("ваш выбор: ");
+			printf("\nРљРђР›Р¬РљРЈР›РЇРўРћР  РњРђРўР РР¦\n");
+			printf("1 - СЃР»РѕР¶РµРЅРёРµ РјР°С‚СЂРёС†\n");
+			printf("2 - РІС‹С‡РёС‚Р°РЅРёРµ РјР°С‚СЂРёС†\n");
+			printf("3 - СѓРјРЅРѕР¶РµРЅРёРµ РјР°С‚СЂРёС†\n");
+			printf("4 - СѓРјРЅРѕР¶РµРЅРёРµ РјР°С‚СЂРёС†С‹ РЅР° С‡РёСЃР»Рѕ\n");
+			printf("5 - СЃР»РѕР¶РµРЅРёРµ РјР°С‚СЂРёС†С‹ СЃ С‡РёСЃР»РѕРј\n");
+			printf("6 - РІС‹С‡РёС‚Р°РЅРёРµ РёР· РјР°С‚СЂРёС†С‹ С‡РёСЃР»Р°\n");
+			printf("7 - С‚СЂР°РЅСЃРїРѕРЅРёСЂРѕРІР°РЅРёРµ РјР°С‚СЂРёС†С‹\n");
+			printf("8 - РѕР±СЂР°С‚РЅР°СЏ РјР°С‚СЂРёС†Р°(2-РіРѕ,3-РіРѕ РїРѕСЂСЏРґРєР°)\n");
+			printf("9 - РѕРїСЂРµРґРµР»РёС‚РµР»СЊ(2-РіРѕ,3-РіРѕ РїРѕСЂСЏРґРєР°)\n");
+			printf("0 - РІС‹Р№С‚Рё\n");
+			printf("РІР°С€ РІС‹Р±РѕСЂ: ");
 			scanf_s("%d", &choice);
 			if (choice == 0) { break; }
 			switch (choice)
@@ -654,65 +654,65 @@ using namespace std;
 		int choice;
 		while (1) {
 
-			printf("\nВыберите операцию:\n");
-			printf("1. Сложение\n");
-			printf("2. Вычитание\n");
-			printf("3. Умножение\n");
-			printf("4. Деление\n");
-			printf("5. Сравнение\n");
-			printf("6. Сокращение\n");
-			printf("7. Представление в виде десятичной дроби\n");
+			printf("\nР’С‹Р±РµСЂРёС‚Рµ РѕРїРµСЂР°С†РёСЋ:\n");
+			printf("1. РЎР»РѕР¶РµРЅРёРµ\n");
+			printf("2. Р’С‹С‡РёС‚Р°РЅРёРµ\n");
+			printf("3. РЈРјРЅРѕР¶РµРЅРёРµ\n");
+			printf("4. Р”РµР»РµРЅРёРµ\n");
+			printf("5. РЎСЂР°РІРЅРµРЅРёРµ\n");
+			printf("6. РЎРѕРєСЂР°С‰РµРЅРёРµ\n");
+			printf("7. РџСЂРµРґСЃС‚Р°РІР»РµРЅРёРµ РІ РІРёРґРµ РґРµСЃСЏС‚РёС‡РЅРѕР№ РґСЂРѕР±Рё\n");
 			printf("0. Exit\n");
-			printf("Введите номер операции: ");
+			printf("Р’РІРµРґРёС‚Рµ РЅРѕРјРµСЂ РѕРїРµСЂР°С†РёРё: ");
 			scanf("%d", &choice);
 
 
 			Fraction result;
 			if(choice == 0) break;
-			printf("Введите первую дробь (числитель знаменатель): ");
+			printf("Р’РІРµРґРёС‚Рµ РїРµСЂРІСѓСЋ РґСЂРѕР±СЊ (С‡РёСЃР»РёС‚РµР»СЊ Р·РЅР°РјРµРЅР°С‚РµР»СЊ): ");
 			scanf("%d %d", &f1.numerator, &f1.denominator);
 
-			printf("Введите вторую дробь (числитель знаменатель): ");
+			printf("Р’РІРµРґРёС‚Рµ РІС‚РѕСЂСѓСЋ РґСЂРѕР±СЊ (С‡РёСЃР»РёС‚РµР»СЊ Р·РЅР°РјРµРЅР°С‚РµР»СЊ): ");
 			scanf("%d %d", &f2.numerator, &f2.denominator);
 			switch (choice) {
 			case 1:
 				result = addFractions(f1, f2);
-				printf("Сумма дробей: %d/%d\n", result.numerator, result.denominator);
+				printf("РЎСѓРјРјР° РґСЂРѕР±РµР№: %d/%d\n", result.numerator, result.denominator);
 				break;
 			case 2:
 				result = subtractFractions(f1, f2);
-				printf("Разность дробей: %d/%d\n", result.numerator, result.denominator);
+				printf("Р Р°Р·РЅРѕСЃС‚СЊ РґСЂРѕР±РµР№: %d/%d\n", result.numerator, result.denominator);
 				break;
 			case 3:
 				result = multiplyFractions(f1, f2);
-				printf("Произведение дробей: %d/%d\n", result.numerator, result.denominator);
+				printf("РџСЂРѕРёР·РІРµРґРµРЅРёРµ РґСЂРѕР±РµР№: %d/%d\n", result.numerator, result.denominator);
 				break;
 			case 4:
 				result = divideFractions(f1, f2);
-				printf("Частное дробей: %d/%d\n", result.numerator, result.denominator);
+				printf("Р§Р°СЃС‚РЅРѕРµ РґСЂРѕР±РµР№: %d/%d\n", result.numerator, result.denominator);
 				break;
 			case 5:
 				if (compareFractions(f1, f2) == 0)
-					printf("Дроби равны\n");
+					printf("Р”СЂРѕР±Рё СЂР°РІРЅС‹\n");
 				else if (compareFractions(f1, f2) > 0)
 
-					printf("Первая дробь больше второй\n");
+					printf("РџРµСЂРІР°СЏ РґСЂРѕР±СЊ Р±РѕР»СЊС€Рµ РІС‚РѕСЂРѕР№\n");
 				else
-					printf("Вторая дробь больше первой\n");
+					printf("Р’С‚РѕСЂР°СЏ РґСЂРѕР±СЊ Р±РѕР»СЊС€Рµ РїРµСЂРІРѕР№\n");
 				break;
 			case 6:
 				simplifyFraction(&f1);
-				printf("Первая дробь после сокращения: %d/%d\n", f1.numerator, f1.denominator);
+				printf("РџРµСЂРІР°СЏ РґСЂРѕР±СЊ РїРѕСЃР»Рµ СЃРѕРєСЂР°С‰РµРЅРёСЏ: %d/%d\n", f1.numerator, f1.denominator);
 
 				simplifyFraction(&f2);
-				printf("Вторая дробь после сокращения: %d/%d\n", f2.numerator, f2.denominator);
+				printf("Р’С‚РѕСЂР°СЏ РґСЂРѕР±СЊ РїРѕСЃР»Рµ СЃРѕРєСЂР°С‰РµРЅРёСЏ: %d/%d\n", f2.numerator, f2.denominator);
 				break;
 			case 7:
-				printf("Десятичная запись первой дроби: %.2f\n", fractionToDecimal(f1));
-				printf("Десятичная запись второй дроби: %.2f\n", fractionToDecimal(f2));
+				printf("Р”РµСЃСЏС‚РёС‡РЅР°СЏ Р·Р°РїРёСЃСЊ РїРµСЂРІРѕР№ РґСЂРѕР±Рё: %.2f\n", fractionToDecimal(f1));
+				printf("Р”РµСЃСЏС‚РёС‡РЅР°СЏ Р·Р°РїРёСЃСЊ РІС‚РѕСЂРѕР№ РґСЂРѕР±Рё: %.2f\n", fractionToDecimal(f2));
 				break;
 			default:
-				printf("Ошибка! Некорректный ввод.\n");
+				printf("РћС€РёР±РєР°! РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІРІРѕРґ.\n");
 			}
 		}
 		
@@ -730,76 +730,76 @@ using namespace std;
 		int choice;
 		int n, k;
 		while (1) {
-			printf("=== Калькулятор комбинаторики ===\n");
-			printf("Выберите действие:\n");
-			printf("1. Размещение с повторениями\n");
-			printf("2. Размещение без повторений\n");
-			printf("3. Сочетание с повторениями\n");
-			printf("4. Сочетание без повторений\n");
-			printf("5. Перестановки\n");
+			printf("=== РљР°Р»СЊРєСѓР»СЏС‚РѕСЂ РєРѕРјР±РёРЅР°С‚РѕСЂРёРєРё ===\n");
+			printf("Р’С‹Р±РµСЂРёС‚Рµ РґРµР№СЃС‚РІРёРµ:\n");
+			printf("1. Р Р°Р·РјРµС‰РµРЅРёРµ СЃ РїРѕРІС‚РѕСЂРµРЅРёСЏРјРё\n");
+			printf("2. Р Р°Р·РјРµС‰РµРЅРёРµ Р±РµР· РїРѕРІС‚РѕСЂРµРЅРёР№\n");
+			printf("3. РЎРѕС‡РµС‚Р°РЅРёРµ СЃ РїРѕРІС‚РѕСЂРµРЅРёСЏРјРё\n");
+			printf("4. РЎРѕС‡РµС‚Р°РЅРёРµ Р±РµР· РїРѕРІС‚РѕСЂРµРЅРёР№\n");
+			printf("5. РџРµСЂРµСЃС‚Р°РЅРѕРІРєРё\n");
 			printf("0. Exit\n");
 			scanf("%d", &choice);
 			if (choice == 0) break;
 			switch (choice) {
 			case 1:
-				printf("Введите n и k через пробел: ");
+				printf("Р’РІРµРґРёС‚Рµ n Рё k С‡РµСЂРµР· РїСЂРѕР±РµР»: ");
 				scanf("%d %d", &n, &k);
 				if (n < 0 || k < 0) {
-					printf("Неверные значения! n и k должны быть положительными целыми числами.\n");
+					printf("РќРµРІРµСЂРЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ! n Рё k РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹РјРё С†РµР»С‹РјРё С‡РёСЃР»Р°РјРё.\n");
 				}
 				else {
-					printf("Результат: %.0f\n", pow(n, k));
+					printf("Р РµР·СѓР»СЊС‚Р°С‚: %.0f\n", pow(n, k));
 				}
 				break;
 			case 2:
-				printf("Введите n и k через пробел: ");
+				printf("Р’РІРµРґРёС‚Рµ n Рё k С‡РµСЂРµР· РїСЂРѕР±РµР»: ");
 				scanf("%d %d", &n, &k);
 				if (n < 0 || k < 0) {
-					printf("Неверные значения! n и k должны быть положительными целыми числами.\n");
+					printf("РќРµРІРµСЂРЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ! n Рё k РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹РјРё С†РµР»С‹РјРё С‡РёСЃР»Р°РјРё.\n");
 				}
 				else {
-					printf("Результат: %d\n", factorial(n) / factorial(n - k));
+					printf("Р РµР·СѓР»СЊС‚Р°С‚: %d\n", factorial(n) / factorial(n - k));
 				}
 				break;
 			case 3:
-				printf("Введите n и k через пробел: ");
+				printf("Р’РІРµРґРёС‚Рµ n Рё k С‡РµСЂРµР· РїСЂРѕР±РµР»: ");
 				scanf("%d %d", &n, &k);
 				if (n < 0 || k < 0) {
-					printf("Неверные значения! n и k должны быть положительными целыми числами.\n");
+					printf("РќРµРІРµСЂРЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ! n Рё k РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹РјРё С†РµР»С‹РјРё С‡РёСЃР»Р°РјРё.\n");
 				}
 				else {
 					int result = 1;
 					result *= factorial(n + k - 1);
 					result /= (factorial(k) * factorial(n - 1));
-					printf("Результат: %d\n", result);
+					printf("Р РµР·СѓР»СЊС‚Р°С‚: %d\n", result);
 				}
 				break;
 			case 4:
-				printf("Введите n и k через пробел: ");
+				printf("Р’РІРµРґРёС‚Рµ n Рё k С‡РµСЂРµР· РїСЂРѕР±РµР»: ");
 				scanf("%d %d", &n, &k);
 				if (n < 0 || k < 0) {
-					printf("Неверные значения! n и k должны быть положительными целыми числами.\n");
+					printf("РќРµРІРµСЂРЅС‹Рµ Р·РЅР°С‡РµРЅРёСЏ! n Рё k РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹РјРё С†РµР»С‹РјРё С‡РёСЃР»Р°РјРё.\n");
 				}
 				else {
 					int result = 1;
 					result *= factorial(n);
 					result /= (factorial(k) * factorial(n - k));
-					printf("Результат: %d\n", result);
+					printf("Р РµР·СѓР»СЊС‚Р°С‚: %d\n", result);
 				}
 				break;
 			case 5:
-				printf("Введите n: ");
+				printf("Р’РІРµРґРёС‚Рµ n: ");
 				scanf("%d", &n);
 				if (n < 0) {
-					printf("Неверное значение! n должно быть положительным целым числом.\n");
+					printf("РќРµРІРµСЂРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ! n РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹Рј С†РµР»С‹Рј С‡РёСЃР»РѕРј.\n");
 				}
 				else {
 					int result = factorial(n);
-					printf("Результат: %d\n", result);
+					printf("Р РµР·СѓР»СЊС‚Р°С‚: %d\n", result);
 				}
 				break;
 			default:
-				printf("Неверный выбор!\n");
+				printf("РќРµРІРµСЂРЅС‹Р№ РІС‹Р±РѕСЂ!\n");
 				break;
 			}
 		}
@@ -887,21 +887,21 @@ using namespace std;
 		int degree1 = 0;
 		int degree2 = 0;
 
-		printf("\nВведите степень первого многочлена: ");
+		printf("\nР’РІРµРґРёС‚Рµ СЃС‚РµРїРµРЅСЊ РїРµСЂРІРѕРіРѕ РјРЅРѕРіРѕС‡Р»РµРЅР°: ");
 		scanf_s("%d", &degree1);
 		poly1 = (float*)malloc(sizeof(*poly1) * (degree1 + 1));
-		printf("Введите коэффициенты первого многочлена:\n");
+		printf("Р’РІРµРґРёС‚Рµ РєРѕСЌС„С„РёС†РёРµРЅС‚С‹ РїРµСЂРІРѕРіРѕ РјРЅРѕРіРѕС‡Р»РµРЅР°:\n");
 		for (int i = 0; i <= degree1; i++) {
-			printf("Коэффициент для x^%d: ", i);
+			printf("РљРѕСЌС„С„РёС†РёРµРЅС‚ РґР»СЏ x^%d: ", i);
 			scanf_s("%f", &poly1[i]);
 		}
 
-		printf("\nВведите степень второго многочлена: ");
+		printf("\nР’РІРµРґРёС‚Рµ СЃС‚РµРїРµРЅСЊ РІС‚РѕСЂРѕРіРѕ РјРЅРѕРіРѕС‡Р»РµРЅР°: ");
 		scanf_s("%d", &degree2);
 		poly2 = (float*)malloc(sizeof(*poly2) * (degree2 + 1));
-		printf("Введите коэффициенты второго многочлена:\n");
+		printf("Р’РІРµРґРёС‚Рµ РєРѕСЌС„С„РёС†РёРµРЅС‚С‹ РІС‚РѕСЂРѕРіРѕ РјРЅРѕРіРѕС‡Р»РµРЅР°:\n");
 		for (int i = 0; i <= degree2; i++) {
-			printf("Коэффициент для x^%d: ", i);
+			printf("РљРѕСЌС„С„РёС†РёРµРЅС‚ РґР»СЏ x^%d: ", i);
 			scanf_s("%f", &poly2[i]);
 		}
 
@@ -918,7 +918,7 @@ using namespace std;
 
 		addPolynomials(poly1, degree1, poly2, degree2, result);
 
-		printf("\nРезультат сложения многочленов:\n");
+		printf("\nР РµР·СѓР»СЊС‚Р°С‚ СЃР»РѕР¶РµРЅРёСЏ РјРЅРѕРіРѕС‡Р»РµРЅРѕРІ:\n");
 		for (int i = 0; i <= sumDegree; i++) {
 			printf("%.2f * x^%d", result[i], i);
 			if (i < sumDegree) {
@@ -938,21 +938,21 @@ using namespace std;
 		int degree1 = 0;
 		int degree2 = 0;
 
-		printf("\nВведите степень первого многочлена: ");
+		printf("\nР’РІРµРґРёС‚Рµ СЃС‚РµРїРµРЅСЊ РїРµСЂРІРѕРіРѕ РјРЅРѕРіРѕС‡Р»РµРЅР°: ");
 		scanf_s("%d", &degree1);
 		poly1 = (float*)malloc(sizeof(*poly1) * (degree1 + 1));
-		printf("Введите коэффициенты первого многочлена:\n");
+		printf("Р’РІРµРґРёС‚Рµ РєРѕСЌС„С„РёС†РёРµРЅС‚С‹ РїРµСЂРІРѕРіРѕ РјРЅРѕРіРѕС‡Р»РµРЅР°:\n");
 		for (int i = 0; i <= degree1; i++) {
-			printf("Коэффициент для x^%d: ", i);
+			printf("РљРѕСЌС„С„РёС†РёРµРЅС‚ РґР»СЏ x^%d: ", i);
 			scanf_s("%f", &poly1[i]);
 		}
 
-		printf("\nВведите степень второго многочлена: ");
+		printf("\nР’РІРµРґРёС‚Рµ СЃС‚РµРїРµРЅСЊ РІС‚РѕСЂРѕРіРѕ РјРЅРѕРіРѕС‡Р»РµРЅР°: ");
 		scanf_s("%d", &degree2);
 		poly2 = (float*)malloc(sizeof(*poly2) * (degree2 + 1));
-		printf("Введите коэффициенты второго многочлена:\n");
+		printf("Р’РІРµРґРёС‚Рµ РєРѕСЌС„С„РёС†РёРµРЅС‚С‹ РІС‚РѕСЂРѕРіРѕ РјРЅРѕРіРѕС‡Р»РµРЅР°:\n");
 		for (int i = 0; i <= degree2; i++) {
-			printf("Коэффициент для x^%d: ", i);
+			printf("РљРѕСЌС„С„РёС†РёРµРЅС‚ РґР»СЏ x^%d: ", i);
 			scanf_s("%f", &poly2[i]);
 		}
 
@@ -968,7 +968,7 @@ using namespace std;
 
 		subtractPolynomials(poly1, degree1, poly2, degree2, result);
 
-		printf("\nРезультат вычитания многочленов:\n");
+		printf("\nР РµР·СѓР»СЊС‚Р°С‚ РІС‹С‡РёС‚Р°РЅРёСЏ РјРЅРѕРіРѕС‡Р»РµРЅРѕРІ:\n");
 		for (int i = 0; i <= diffDegree; i++) {
 			printf("%.2f * x^%d", result[i], i);
 			if (i < diffDegree) {
@@ -988,31 +988,31 @@ using namespace std;
 		int degree1 = 0;
 		int degree2 = 0;
 
-		printf("\nВведите степень первого многочлена: ");
+		printf("\nР’РІРµРґРёС‚Рµ СЃС‚РµРїРµРЅСЊ РїРµСЂРІРѕРіРѕ РјРЅРѕРіРѕС‡Р»РµРЅР°: ");
 		while (scanf_s("%d", &degree1) != 1 || degree1 < 0) {
-			printf("Ошибка ввода. Введите целое неотрицательное число: ");
+			printf("РћС€РёР±РєР° РІРІРѕРґР°. Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ: ");
 			while (getchar() != '\n'); 
 		}
 
 		poly1 = (float*)malloc(sizeof(float) * (degree1 + 1));
 
-		printf("Введите коэффициенты первого многочлена:\n");
+		printf("Р’РІРµРґРёС‚Рµ РєРѕСЌС„С„РёС†РёРµРЅС‚С‹ РїРµСЂРІРѕРіРѕ РјРЅРѕРіРѕС‡Р»РµРЅР°:\n");
 		for (int i = 0; i <= degree1; i++) {
-			printf("Коэффициент для x^%d: ", i);
+			printf("РљРѕСЌС„С„РёС†РёРµРЅС‚ РґР»СЏ x^%d: ", i);
 			scanf_s("%f", &poly1[i]);
 		}
 
-		printf("\nВведите степень второго многочлена: ");
+		printf("\nР’РІРµРґРёС‚Рµ СЃС‚РµРїРµРЅСЊ РІС‚РѕСЂРѕРіРѕ РјРЅРѕРіРѕС‡Р»РµРЅР°: ");
 		while (scanf_s("%d", &degree2) != 1 || degree2 < 0) {
-			printf("Ошибка ввода. Введите целое неотрицательное число: ");
+			printf("РћС€РёР±РєР° РІРІРѕРґР°. Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ: ");
 			while (getchar() != '\n'); 
 		}
 
 		poly2 = (float*)malloc(sizeof(float) * (degree2 + 1));
 
-		printf("Введите коэффициенты второго многочлена:\n");
+		printf("Р’РІРµРґРёС‚Рµ РєРѕСЌС„С„РёС†РёРµРЅС‚С‹ РІС‚РѕСЂРѕРіРѕ РјРЅРѕРіРѕС‡Р»РµРЅР°:\n");
 		for (int i = 0; i <= degree2; i++) {
-			printf("Коэффициент для x^%d: ", i);
+			printf("РљРѕСЌС„С„РёС†РёРµРЅС‚ РґР»СЏ x^%d: ", i);
 			scanf_s("%f", &poly2[i]);
 		}
 
@@ -1026,7 +1026,7 @@ using namespace std;
 
 		multiplyPolynomials(poly1, degree1, poly2, degree2, result);
 
-		printf("\nРезультат умножения многочленов:\n");
+		printf("\nР РµР·СѓР»СЊС‚Р°С‚ СѓРјРЅРѕР¶РµРЅРёСЏ РјРЅРѕРіРѕС‡Р»РµРЅРѕРІ:\n");
 		for (int i = productDegree; i >= 0; i--) {
 			printf("%.2f * x^%d", result[i], i);
 			if (i > 0) {
@@ -1045,26 +1045,26 @@ using namespace std;
 		int degree = 0;
 		float number = 0;
 
-		printf("\nВведите степень многочлена: ");
+		printf("\nР’РІРµРґРёС‚Рµ СЃС‚РµРїРµРЅСЊ РјРЅРѕРіРѕС‡Р»РµРЅР°: ");
 		while (scanf_s("%d", &degree) != 1 || degree < 0) {
-			printf("Ошибка ввода. Введите целое неотрицательное число: ");
+			printf("РћС€РёР±РєР° РІРІРѕРґР°. Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ: ");
 			while (getchar() != '\n'); 
 		}
 
 		poly = (float*)malloc(sizeof(float) * (degree + 1));
 
-		printf("Введите коэффициенты многочлена:\n");
+		printf("Р’РІРµРґРёС‚Рµ РєРѕСЌС„С„РёС†РёРµРЅС‚С‹ РјРЅРѕРіРѕС‡Р»РµРЅР°:\n");
 		for (int i = 0; i <= degree; i++) {
-			printf("Коэффициент для x^%d: ", i);
+			printf("РљРѕСЌС„С„РёС†РёРµРЅС‚ РґР»СЏ x^%d: ", i);
 			scanf_s("%f", &poly[i]);
 		}
 
-		printf("Введите число для умножения: ");
+		printf("Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ РґР»СЏ СѓРјРЅРѕР¶РµРЅРёСЏ: ");
 		scanf_s("%f", &number);
 
 		multiplyPolynomialByNumber(poly, degree, number);
 
-		printf("\nРезультат умножения многочлена на число:\n");
+		printf("\nР РµР·СѓР»СЊС‚Р°С‚ СѓРјРЅРѕР¶РµРЅРёСЏ РјРЅРѕРіРѕС‡Р»РµРЅР° РЅР° С‡РёСЃР»Рѕ:\n");
 		for (int i = degree; i >= 0; i--) {
 			printf("%.2f * x^%d", poly[i], i);
 			if (i > 0) {
@@ -1080,23 +1080,23 @@ using namespace std;
 		float* poly;
 		int degree = 0;
 
-		printf("\nВведите степень многочлена: ");
+		printf("\nР’РІРµРґРёС‚Рµ СЃС‚РµРїРµРЅСЊ РјРЅРѕРіРѕС‡Р»РµРЅР°: ");
 		while (scanf_s("%d", &degree) != 1 || degree < 0) {
-			printf("Ошибка ввода. Введите целое неотрицательное число: ");
+			printf("РћС€РёР±РєР° РІРІРѕРґР°. Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ: ");
 			while (getchar() != '\n'); 
 		}
 
 		poly = (float*)malloc(sizeof(float) * (degree + 1));
 
-		printf("Введите коэффициенты многочлена:\n");
+		printf("Р’РІРµРґРёС‚Рµ РєРѕСЌС„С„РёС†РёРµРЅС‚С‹ РјРЅРѕРіРѕС‡Р»РµРЅР°:\n");
 		for (int i = 0; i <= degree; i++) {
-			printf("Коэффициент для x^%d: ", i);
+			printf("РљРѕСЌС„С„РёС†РёРµРЅС‚ РґР»СЏ x^%d: ", i);
 			scanf_s("%f", &poly[i]);
 		}
 
 		differentiatePolynomial(poly, degree);
 
-		printf("\nРезультат вычисления производной от многочлена:\n");
+		printf("\nР РµР·СѓР»СЊС‚Р°С‚ РІС‹С‡РёСЃР»РµРЅРёСЏ РїСЂРѕРёР·РІРѕРґРЅРѕР№ РѕС‚ РјРЅРѕРіРѕС‡Р»РµРЅР°:\n");
 		for (int i = degree - 1; i >= 0; i--) {
 			printf("%.2f * x^%d", poly[i], i);
 			if (i > 0) {
@@ -1118,31 +1118,31 @@ using namespace std;
 		int degreeQuotient = 0;
 		int degreeRemainder = 0;
 
-		printf("\nВведите степень делимого многочлена: ");
+		printf("\nР’РІРµРґРёС‚Рµ СЃС‚РµРїРµРЅСЊ РґРµР»РёРјРѕРіРѕ РјРЅРѕРіРѕС‡Р»РµРЅР°: ");
 		while (scanf_s("%d", &degreeDividend) != 1 || degreeDividend < 0) {
-			printf("Ошибка ввода. Введите целое неотрицательное число: ");
+			printf("РћС€РёР±РєР° РІРІРѕРґР°. Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ: ");
 			while (getchar() != '\n'); 
 		}
 
 		dividend = (float*)malloc(sizeof(float) * (degreeDividend + 1));
 
-		printf("Введите коэффициенты делимого многочлена:\n");
+		printf("Р’РІРµРґРёС‚Рµ РєРѕСЌС„С„РёС†РёРµРЅС‚С‹ РґРµР»РёРјРѕРіРѕ РјРЅРѕРіРѕС‡Р»РµРЅР°:\n");
 		for (int i = 0; i <= degreeDividend; i++) {
-			printf("Коэффициент для x^%d: ", i);
+			printf("РљРѕСЌС„С„РёС†РёРµРЅС‚ РґР»СЏ x^%d: ", i);
 			scanf_s("%f", &dividend[i]);
 		}
 
-		printf("\nВведите степень делителя: ");
+		printf("\nР’РІРµРґРёС‚Рµ СЃС‚РµРїРµРЅСЊ РґРµР»РёС‚РµР»СЏ: ");
 		while (scanf_s("%d", &degreeDivisor) != 1 || degreeDivisor < 0) {
-			printf("Ошибка ввода. Введите целое неотрицательное число: ");
+			printf("РћС€РёР±РєР° РІРІРѕРґР°. Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ РЅРµРѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ: ");
 			while (getchar() != '\n'); 
 		}
 
 		divisor = (float*)malloc(sizeof(float) * (degreeDivisor + 1));
 
-		printf("Введите коэффициенты делителя:\n");
+		printf("Р’РІРµРґРёС‚Рµ РєРѕСЌС„С„РёС†РёРµРЅС‚С‹ РґРµР»РёС‚РµР»СЏ:\n");
 		for (int i = 0; i <= degreeDivisor; i++) {
-			printf("Коэффициент для x^%d: ", i);
+			printf("РљРѕСЌС„С„РёС†РёРµРЅС‚ РґР»СЏ x^%d: ", i);
 			scanf_s("%f", &divisor[i]);
 		}
 
@@ -1151,8 +1151,8 @@ using namespace std;
 
 		dividePolynomials(dividend, degreeDividend, divisor, degreeDivisor, quotient, &degreeQuotient, remainder, &degreeRemainder);
 
-		printf("\nРезультат деления многочленов:\n");
-		printf("Частное:\n");
+		printf("\nР РµР·СѓР»СЊС‚Р°С‚ РґРµР»РµРЅРёСЏ РјРЅРѕРіРѕС‡Р»РµРЅРѕРІ:\n");
+		printf("Р§Р°СЃС‚РЅРѕРµ:\n");
 		for (int i = degreeQuotient; i >= 0; i--) {
 			printf("%.2f * x^%d", quotient[i], i);
 			if (i > 0) {
@@ -1160,7 +1160,7 @@ using namespace std;
 			}
 		}
 		printf("\n");
-		printf("Остаток:\n");
+		printf("РћСЃС‚Р°С‚РѕРє:\n");
 		for (int i = degreeRemainder - 1; i >= 0; i--) {
 			printf("%.2f * x^%d", remainder[i], i);
 			if (i > 0) {
@@ -1177,17 +1177,17 @@ using namespace std;
 
 	int getUserChoice() {
 		int choice = 0;
-		printf("\nВыберите задание:\n");
-		printf("1. Сложение многочленов\n");
-		printf("2. Вычитание многочленов\n");
-		printf("3. Умножение многочленов\n");
-		printf("4. Умножение многочлена на число\n");
-		printf("5. Вычисление производной многочлена\n");
-		printf("6. Деление многочленов\n");
-		printf("0. Выход\n");
+		printf("\nР’С‹Р±РµСЂРёС‚Рµ Р·Р°РґР°РЅРёРµ:\n");
+		printf("1. РЎР»РѕР¶РµРЅРёРµ РјРЅРѕРіРѕС‡Р»РµРЅРѕРІ\n");
+		printf("2. Р’С‹С‡РёС‚Р°РЅРёРµ РјРЅРѕРіРѕС‡Р»РµРЅРѕРІ\n");
+		printf("3. РЈРјРЅРѕР¶РµРЅРёРµ РјРЅРѕРіРѕС‡Р»РµРЅРѕРІ\n");
+		printf("4. РЈРјРЅРѕР¶РµРЅРёРµ РјРЅРѕРіРѕС‡Р»РµРЅР° РЅР° С‡РёСЃР»Рѕ\n");
+		printf("5. Р’С‹С‡РёСЃР»РµРЅРёРµ РїСЂРѕРёР·РІРѕРґРЅРѕР№ РјРЅРѕРіРѕС‡Р»РµРЅР°\n");
+		printf("6. Р”РµР»РµРЅРёРµ РјРЅРѕРіРѕС‡Р»РµРЅРѕРІ\n");
+		printf("0. Р’С‹С…РѕРґ\n");
 
 		while (scanf_s("%d", &choice) != 1 || choice < 0 || choice > 6) {
-			printf("Ошибка ввода. Введите число от 0 до 6: ");
+			printf("РћС€РёР±РєР° РІРІРѕРґР°. Р’РІРµРґРёС‚Рµ С‡РёСЃР»Рѕ РѕС‚ 0 РґРѕ 6: ");
 			while (getchar() != '\n'); 
 		}
 
@@ -1203,7 +1203,7 @@ using namespace std;
 
 			switch (choice) {
 			case 0:
-				printf("Выход из программы.\n");
+				printf("Р’С‹С…РѕРґ РёР· РїСЂРѕРіСЂР°РјРјС‹.\n");
 				break;
 			case 1:
 				task1();
@@ -1224,7 +1224,7 @@ using namespace std;
 				task6();
 				break;
 			default:
-				printf("Некорректный выбор. Попробуйте снова.\n");
+				printf("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Р№ РІС‹Р±РѕСЂ. РџРѕРїСЂРѕР±СѓР№С‚Рµ СЃРЅРѕРІР°.\n");
 				break;
 			}
 		}
@@ -1258,46 +1258,46 @@ using namespace std;
 		double mean, variance;
 
 		do {
-			std::cout << "Выберите операцию:" << std::endl;
-			std::cout << "1. Вычислить вероятность m/n" << std::endl;
-			std::cout << "2. Вычислить дисперсию для дискретного распределения величин" << std::endl;
-			std::cout << "3. Вычислить математическое ожидание для дискретного распределения величин" << std::endl;
-			std::cout << "4. Выйти" << std::endl;
-			std::cout << "Ваш выбор: ";
+			std::cout << "Р’С‹Р±РµСЂРёС‚Рµ РѕРїРµСЂР°С†РёСЋ:" << std::endl;
+			std::cout << "1. Р’С‹С‡РёСЃР»РёС‚СЊ РІРµСЂРѕСЏС‚РЅРѕСЃС‚СЊ m/n" << std::endl;
+			std::cout << "2. Р’С‹С‡РёСЃР»РёС‚СЊ РґРёСЃРїРµСЂСЃРёСЋ РґР»СЏ РґРёСЃРєСЂРµС‚РЅРѕРіРѕ СЂР°СЃРїСЂРµРґРµР»РµРЅРёСЏ РІРµР»РёС‡РёРЅ" << std::endl;
+			std::cout << "3. Р’С‹С‡РёСЃР»РёС‚СЊ РјР°С‚РµРјР°С‚РёС‡РµСЃРєРѕРµ РѕР¶РёРґР°РЅРёРµ РґР»СЏ РґРёСЃРєСЂРµС‚РЅРѕРіРѕ СЂР°СЃРїСЂРµРґРµР»РµРЅРёСЏ РІРµР»РёС‡РёРЅ" << std::endl;
+			std::cout << "4. Р’С‹Р№С‚Рё" << std::endl;
+			std::cout << "Р’Р°С€ РІС‹Р±РѕСЂ: ";
 			std::cin >> choice;
 
 			switch (choice) {
 			case 1:
-				std::cout << "Введите значения для m и n: ";
+				std::cout << "Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёСЏ РґР»СЏ m Рё n: ";
 				std::cin >> m >> n;
-				std::cout << "Вероятность m/n равна: " << calculateProbability(m, n) << std::endl;
+				std::cout << "Р’РµСЂРѕСЏС‚РЅРѕСЃС‚СЊ m/n СЂР°РІРЅР°: " << calculateProbability(m, n) << std::endl;
 				break;
 			case 2:
-				std::cout << "Введите количество значений: ";
+				std::cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ Р·РЅР°С‡РµРЅРёР№: ";
 				std::cin >> size;
-				std::cout << "Введите значения через пробел: ";
+				std::cout << "Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёСЏ С‡РµСЂРµР· РїСЂРѕР±РµР»: ";
 				for (int i = 0; i < size; i++) {
 					std::cin >> values[i];
 				}
 				mean = calculateMean(values, size);
 				variance = calculateVariance(values, size, mean);
-				std::cout << "Дисперсия равна: " << variance << std::endl;
+				std::cout << "Р”РёСЃРїРµСЂСЃРёСЏ СЂР°РІРЅР°: " << variance << std::endl;
 				break;
 			case 3:
-				std::cout << "Введите количество значений: ";
+				std::cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ Р·РЅР°С‡РµРЅРёР№: ";
 				std::cin >> size;
-				std::cout << "Введите значения через пробел: ";
+				std::cout << "Р’РІРµРґРёС‚Рµ Р·РЅР°С‡РµРЅРёСЏ С‡РµСЂРµР· РїСЂРѕР±РµР»: ";
 				for (int i = 0; i < size; i++) {
 					std::cin >> values[i];
 				}
 				mean = calculateMean(values, size);
-				std::cout << "Математическое ожидание равно: " << mean << std::endl;
+				std::cout << "РњР°С‚РµРјР°С‚РёС‡РµСЃРєРѕРµ РѕР¶РёРґР°РЅРёРµ СЂР°РІРЅРѕ: " << mean << std::endl;
 				break;
 			case 4:
-				std::cout << "Программа завершена." << std::endl;
+				std::cout << "РџСЂРѕРіСЂР°РјРјР° Р·Р°РІРµСЂС€РµРЅР°." << std::endl;
 				break;
 			default:
-				std::cout << "Неверный выбор. Повторите попытку." << std::endl;
+				std::cout << "РќРµРІРµСЂРЅС‹Р№ РІС‹Р±РѕСЂ. РџРѕРІС‚РѕСЂРёС‚Рµ РїРѕРїС‹С‚РєСѓ." << std::endl;
 				break;
 			}
 		} while (choice != 4);
@@ -1497,7 +1497,7 @@ using namespace std;
 		printf_s("integral = %lf", integral);
 	}
 
-	/*void SDL_graphic(ans answer) { не знаю почему не работает ((((((
+	/*void SDL_graphic(ans answer) { РЅРµ Р·РЅР°СЋ РїРѕС‡РµРјСѓ РЅРµ СЂР°Р±РѕС‚Р°РµС‚ ((((((
 		SDL_Init(SDL_INIT_EVERYTHING);
 		SDL_Surface* screenSurface = NULL;
 		const int SCREEN_SIZE = 1000;
