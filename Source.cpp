@@ -1561,7 +1561,7 @@ using namespace std;
 		int action;
 		ans koef = Enter_Func();
 		do {
-			printf_s("Enter your type of action: \n 1.Extremum\n2.Func nule\n3.Exponential Function\n 4.Log function\n0.EXIT "), scanf_s("%d", &action);
+			printf_s("Enter your type of action: \n 1.Extremum\n2.Func nule\n 4.Defenite Integral\n0.EXIT "), scanf_s("%d", &action);
 			switch (action) {
 			case 1:
 			{
