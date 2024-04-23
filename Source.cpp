@@ -1362,7 +1362,7 @@ using namespace std;
 		}
 		case 2: {
 
-			printf_s("Enter a, b, c: "), scanf_s("%lf %lf %lf ", &a, &b, &c);
+			printf_s("For a*x^b +c: Enter a, b, c: "), scanf_s("%lf %lf %lf ", &a, &b, &c);
 			answer.a = a;
 			answer.b = b;
 			answer.c = c;
@@ -1372,7 +1372,7 @@ using namespace std;
 		}
 		case 3: {
 
-			printf_s("Enter a, b, c, d: "), scanf_s("%lf %lf %lf %lf", &a, &b, &c, &d);
+			printf_s("For a*b^(c*x)+d: Enter a, b, c, d: "), scanf_s("%lf %lf %lf %lf", &a, &b, &c, &d);
 			answer.a = a;
 			answer.b = b;
 			answer.c = c;
@@ -1382,7 +1382,7 @@ using namespace std;
 		}
 		case 4: {
 
-			printf_s("Enter a, b, c: "), scanf_s("%lf %lf %lf ", &a, &b, &c);
+			printf_s("For a*ln(b*x)+c: Enter a, b, c: "), scanf_s("%lf %lf %lf ", &a, &b, &c);
 			answer.a = a;
 			answer.b = b;
 			answer.c = c;
@@ -1392,7 +1392,7 @@ using namespace std;
 		}
 		case 5: {
 
-			printf_s("Enter a, b, c, d: "), scanf_s("%lf %lf %lf %lf", &a, &b, &c, &d);
+			printf_s("For a*sin(b*x+c)+d: Enter a, b, c, d: "), scanf_s("%lf %lf %lf %lf", &a, &b, &c, &d);
 			answer.a = a;
 			answer.b = b;
 			answer.c = c;
@@ -1402,7 +1402,7 @@ using namespace std;
 		}
 		case 6: {
 
-			printf_s("Enter a, b, c, d: "), scanf_s("%lf %lf %lf %lf", &a, &b, &c, &d);
+			printf_s("For a*cos(b*x+c)+d: Enter a, b, c, d: "), scanf_s("%lf %lf %lf %lf", &a, &b, &c, &d);
 			answer.a = a;
 			answer.b = b;
 			answer.c = c;
